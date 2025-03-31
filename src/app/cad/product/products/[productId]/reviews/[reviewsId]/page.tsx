@@ -8,7 +8,7 @@ interface Reviewsparams {
 }
 
 export default function Reviews({ params }: Reviewsparams) {
-    if (parseInt(params.reviewsId) > 1000 || parseInt(params.reviewsId) <= 0 || parseInt(params.productId) > 100) {  //parseInt garante que seja um numero
+    if (parseInt(params.reviewsId) > 1000) {  //parseInt garante que seja um numero
         notFound()
     }
 
